@@ -1,0 +1,441 @@
+body{
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.navbar-nav.menu .nav-link 
+{
+    margin-right: 30px;
+}
+@font-face 
+{
+    font-family: firstFont;
+    src: url(/fonts/GoogleSansDisplay-Regular-v1.27.ttf);
+}
+@font-face
+ {
+    font-family: secondFont;
+    src: url(/fonts/GoogleSans-Medium-v1.27.ttf);
+}
+@font-face 
+{
+    font-family: thirdFont;
+    src: url(/fonts/GoogleSansDisplay-Bold-v1.27.ttf);
+}
+
+.navbar{
+    box-shadow: 0 1px rgba(0, 0, 0, 0.1);
+    
+}
+
+
+.nav-link
+{
+    color: grey;
+    font-family: thirdFont;
+}
+
+.navbar-nav .nav-link {
+    position: relative;
+    text-decoration: none; /* Remove default underline */
+    color: #484848; /* Default text color */
+    
+  }
+  .navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px; /* Adjust to fit perfectly into the text */
+    left: 0;
+    width: 100%; /* Fit the width of the text */
+    height: 2px; /* Adjust thickness as needed */
+    background-color: transparent; /* Transparent initially */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transition color and size */
+    transform: scaleX(0); /* Initially no width */
+    transform-origin: bottom left; /* Transform origin */
+  }
+  .navbar-nav .nav-link:hover::after {
+    background-color: #007bff; /* Change color on hover */
+    transform: scaleX(1); /* Expand to full width on hover */
+    bottom: -6px; /* Adjust to slightly increase size */
+  }
+
+
+
+.navbar-brand
+{
+    font-family: firstFont;
+    color: pink;
+}
+.navbar
+{
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: #ffffff;
+}
+.myfont
+{
+    font-size: 10px;
+    text-align: left;
+    
+    line-height: 0;
+}
+
+
+
+.timeline {
+    position: relative;
+    bottom: 1625px;
+    width: 70%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 15px 0;
+  }
+  
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background: #000;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1px;
+  }
+  
+  .container {
+    padding: 15px 30px;
+    position: relative;
+    background: inherit;
+    width: 50%;
+  }
+  
+  .container.left {
+    position: relative;
+    left: -292px;
+    width: 65%;
+    height: 50%;
+  }
+  
+  
+  .container.right {
+    position: relative;
+    right: -292px;
+    width: 65%;
+    height: 50%;
+  }
+  
+  .container::after {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: calc(50% - 8px);
+    right: -8px;
+    background: #ffffff;
+    border: 2px solid #000;
+    border-radius: 16px;
+    z-index: 1;
+  }
+  
+  .container.right::after {
+    left: -8px;
+  }
+  
+  .container::before {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    top: calc(50% - 1px);
+    right: 8px;
+    background: #000;
+    z-index: 1;
+  }
+  
+  .container.right::before {
+    left: 8px;
+  }
+  
+  .container .date {
+    position: absolute;
+    display: inline-block;
+    top: calc(50% - 8px);
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    z-index: 1;
+  }
+  
+  .container.left .date {
+    right: -110px;
+  }
+  
+  .container.right .date {
+    left: -110px;
+  }
+  
+  .container .icon {
+    position: absolute;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    padding: 9px 0;
+    top: calc(50% - 20px);
+   
+    border: 2px solid #000;
+    border-radius: 40px;
+    text-align: center;
+    font-size: 18px;
+    color: #000;
+    z-index: 1;
+  }
+  
+  .container.left .icon {
+    right: 56px;
+  }
+  
+  .container.right .icon {
+    left: 56px;
+  }
+  
+  .container .content {
+    padding: 30px 90px 30px 30px;
+    background: #d3d3d3;
+    position: relative;
+    border-radius: 0 500px 500px 0;
+  }
+  
+  .container.right .content {
+    padding: 30px 30px 30px 90px;
+    border-radius: 500px 0 0 500px;
+  }
+  
+  
+  .Container1 .content h2 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    font-weight: normal;
+    color: #ea4335;
+    font-family: secondFont;
+  }
+  .Container2 .content h2 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    font-weight: normal;
+    color: #4285f4;
+    font-family: secondFont;
+  }
+  .Container3 .content h2 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    font-weight: normal;
+    color: #34a853;
+    font-family: secondFont;
+  }
+  .Container4 .content h2 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    font-weight: normal;
+    color: #ffa700;
+    font-family: secondFont;
+  }
+  .Container5 .content h2 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    font-weight: normal;
+    color: #ea4335;
+    font-family: secondFont;
+  }
+  
+  .container .content p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+    font-family: firstFont;
+  }
+  .Container1 .icon{
+    background: #ea4335;
+  }
+  .Container2 .icon{
+    background: #4285f4;
+  }
+  .Container3 .icon{
+    background: #34a853;
+  }
+  .Container4 .icon{
+    background: #ffa700;
+  }
+  .Container5 .icon{
+    background: #ea4335;
+  }
+
+  .container .content:hover{
+    box-shadow: 0 0 10px rgba(0.2, 0.2, 0.2, 0.2);
+  }
+  
+  @media (max-width: 767.98px) {
+    .timeline::after {
+      left: 90px;
+    }
+  
+    .container {
+      width: 100%;
+      padding-left: 120px;
+      padding-right: 30px;
+    }
+  
+    .container.right {
+      left: 0%;
+    }
+  
+    .container.left::after, 
+    .container.right::after {
+      left: 82px;
+    }
+  
+    .container.left::before,
+    .container.right::before {
+      left: 100px;
+      border-color: transparent #000 transparent transparent;
+    }
+  
+    .container.left .date,
+    .container.right .date {
+      right: auto;
+      left: 15px;
+    }
+  
+    .container.left .icon,
+    .container.right .icon {
+      right: auto;
+      left: 146px;
+    }
+  
+    .container.left .content,
+    .container.right .content {
+      padding: 30px 30px 30px 90px;
+      border-radius: 500px 0 0 500px;
+    }
+  }
+
+  .tabs-container {
+    padding: 1rem;
+    width: calc(100% - 150px); /* Adjusting width from the right side */
+    max-width: calc(70rem - 150px); /* Adjusting max-width from the right side */
+    min-width: calc(60rem - 150px); /* Adjusting min-width from the right side */
+    position: relative;
+    display: flex;
+    border-radius: 1rem;
+    background-color: var(--widget-background);
+    border: 1px solid var(--primary-border);
+    height: 18.875rem;
+    overflow: hidden;
+    margin-left: 10.675rem; /* Preserve the margin from the left side */
+    margin-right: 0; /* Resetting the margin from the right side */
+}
+
+  @media (max-width: 1366px) {
+    .timeline {
+      max-width: 90%; /* Adjusted maximum width for smaller laptops */
+      margin: 0 auto; /* Center the timeline */
+    }
+  }
+
+
+  ol,
+  li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .carousel {
+    position: absolute;
+    width: 100%;
+    bottom: 1500px;
+    height: 400px;
+    perspective: 100px;
+    overflow: hidden;
+    margin-bottom: -400px;
+  }
+  
+  .carousel__viewport {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    overflow-x: scroll;
+    counter-reset: item;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+  }
+  
+  .carousel::before,
+  .carousel::after {
+    content: "";
+    position:absolute;
+    z-index: 2;
+    left: 50%;
+    translate: -50% 0;
+    width: 500%;
+    height: 500%;
+    border-radius: 50%;
+    background: #ffffff;
+  }
+  
+  .carousel::before {
+    top: -480%;
+  }
+  
+  .carousel::after {
+    bottom: -480%;
+  }
+  
+  .carousel__slide {
+    position: relative;
+    flex: 0 0 33.33%;
+    width: 33.33%;
+    counter-increment: item;
+    animation: scroll 0.4s;
+  }
+  
+  .carousel__slide:before {
+    content: counter(item);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -40%, 70px);
+  }
+  
+  .carousel__snapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: center;
+    background-size: cover;
+    background-position: 50%;
+    border: 10px solid #ffffff;
+  }
+
+  *::-webkit-scrollbar {
+    width: 0;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background: transparent;
+    border: none;
+  }
+  
+

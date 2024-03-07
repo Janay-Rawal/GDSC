@@ -1,0 +1,80 @@
+body{
+    overflow-x: hidden;
+}
+
+.navbar-nav.menu .nav-link 
+{
+    margin-right: 30px;
+}
+@font-face 
+{
+    font-family: firstFont;
+    src: url(/fonts/GoogleSansDisplay-Regular-v1.27.ttf);
+}
+@font-face
+ {
+    font-family: secondFont;
+    src: url(/fonts/GoogleSans-Medium-v1.27.ttf);
+}
+@font-face 
+{
+    font-family: thirdFont;
+    src: url(/fonts/GoogleSansDisplay-Bold-v1.27.ttf);
+}
+
+.navbar{
+    box-shadow: 0 1px rgba(0, 0, 0, 0.1);
+    
+}
+
+
+.nav-link
+{
+    color: grey;
+    font-family: thirdFont;
+}
+
+.navbar-nav .nav-link {
+    position: relative;
+    text-decoration: none; /* Remove default underline */
+    color: #484848; /* Default text color */
+    
+  }
+  .navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px; /* Adjust to fit perfectly into the text */
+    left: 0;
+    width: 100%; /* Fit the width of the text */
+    height: 2px; /* Adjust thickness as needed */
+    background-color: transparent; /* Transparent initially */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transition color and size */
+    transform: scaleX(0); /* Initially no width */
+    transform-origin: bottom left; /* Transform origin */
+  }
+  .navbar-nav .nav-link:hover::after {
+    background-color: #007bff; /* Change color on hover */
+    transform: scaleX(1); /* Expand to full width on hover */
+    bottom: -6px; /* Adjust to slightly increase size */
+  }
+
+
+
+.navbar-brand
+{
+    font-family: firstFont;
+    color: pink;
+}
+.navbar
+{
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: #ffffff;
+}
+.myfont
+{
+    font-size: 10px;
+    text-align: left;
+    
+    line-height: 0;
+}
